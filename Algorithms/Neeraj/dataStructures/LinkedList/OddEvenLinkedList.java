@@ -22,20 +22,6 @@ public class OddEvenLinkedList {
     }
 
     public static ListNode oddEvenList(ListNode head) {
-        ListNode odd = new ListNode(-1), oddRef = odd, even = new ListNode(-1), evenRef = even;
-        int count = 0;
-        while (head != null) {
-            if (count % 2 == 0) {
-                oddRef.next = new ListNode(head.val);
-                oddRef = oddRef.next;
-            } else {
-                evenRef.next = new ListNode(head.val);
-                evenRef = evenRef.next;
-            }
-            count++;
-            head = head.next;
-        }
-        oddRef.next = even.next;
-        return odd.next;
+        return null;
     }
 }

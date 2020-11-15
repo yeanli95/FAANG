@@ -56,7 +56,7 @@ public class W3DisJointSet {
             if (parent1.rank == parent2.rank) maxRank += 1;
             if (parent1.rank >= parent2.rank) {
                 parent1.rank = maxRank;
-//                Doing Node Compression.
+//                Doing Path Compression.
                 parent2.parent = parent1;
             } else {
                 parent1.parent = parent2;
