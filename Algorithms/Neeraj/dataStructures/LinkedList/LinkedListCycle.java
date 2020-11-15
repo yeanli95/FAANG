@@ -55,7 +55,7 @@ public class LinkedListCycle {
         }
     }
 
-    public static ListNode createListNode(int[] nums) {
+    private static ListNode createListNode(int[] nums) {
         if (nums.length == 0) {
             return null;
         }
@@ -127,9 +127,6 @@ class ListNode {
 
     @Override
     public String toString() {
-        return "ListNode{" +
-                "val=" + val +
-                ", next=" + next +
-                '}';
+        return val + "," + next;
     }
 }

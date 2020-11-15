@@ -1,3 +1,4 @@
+package algorithms;
 
 import java.text.DecimalFormat;
 
